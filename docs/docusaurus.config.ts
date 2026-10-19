@@ -32,6 +32,7 @@ const config: Config = {
 
   organizationName: process.env.DOCS_ORG_NAME!,
   projectName: process.env.DOCS_PROJECT_NAME!,
+  trailingSlash: false,
 
   customFields: {
     apiVersion: getApiMajorVersion(),
