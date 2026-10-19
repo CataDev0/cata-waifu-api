@@ -18,7 +18,7 @@ concurrency:
 
 env:
   DOCS_URL: ${{ vars.DOCS_URL || 'https://docs.waifu.im' }}
-  DOCS_BASE_URL: /
+  DOCS_BASE_URL: ${{ vars.DOCS_BASE_URL || 'waifu-api' }}
   DOCS_ORG_NAME: ${{ vars.DOCS_ORG_NAME || 'Waifu-im' }}
   DOCS_PROJECT_NAME: waifu-api
   API_BASE_URL: ${{ vars.API_BASE_URL || 'https://api.waifu.im' }}
